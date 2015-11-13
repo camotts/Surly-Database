@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SURLY", "SURLY\SURLY.csproj", "{86CAE496-1AFF-4AF2-B41C-34509132B60F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDBMS", "WebDBMS\WebDBMS.csproj", "{0B94B662-FD8E-42FB-8C9E-7F200C8298D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SURLYdll", "SURLYdll\SURLYdll.csproj", "{073D85B9-8B24-4D3E-8F4D-73714BEA7436}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://pdolan.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SURLY\\SURLY.csproj
+		SccProjectName1 = SURLY
+		SccLocalPath1 = SURLY
+		SccProjectUniqueName2 = WebDBMS\\WebDBMS.csproj
+		SccProjectName2 = WebDBMS
+		SccLocalPath2 = WebDBMS
+		SccProjectUniqueName3 = SURLYdll\\SURLYdll.csproj
+		SccProjectName3 = SURLYdll
+		SccLocalPath3 = SURLYdll
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86CAE496-1AFF-4AF2-B41C-34509132B60F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86CAE496-1AFF-4AF2-B41C-34509132B60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86CAE496-1AFF-4AF2-B41C-34509132B60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86CAE496-1AFF-4AF2-B41C-34509132B60F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B94B662-FD8E-42FB-8C9E-7F200C8298D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B94B662-FD8E-42FB-8C9E-7F200C8298D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B94B662-FD8E-42FB-8C9E-7F200C8298D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B94B662-FD8E-42FB-8C9E-7F200C8298D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{073D85B9-8B24-4D3E-8F4D-73714BEA7436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073D85B9-8B24-4D3E-8F4D-73714BEA7436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073D85B9-8B24-4D3E-8F4D-73714BEA7436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073D85B9-8B24-4D3E-8F4D-73714BEA7436}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
