@@ -14,20 +14,20 @@ namespace SURLY
             Database db = new Database();
             bool errorThrow = false;
             // Initialize a new instance of the SpeechSynthesizer.
-            SpeechSynthesizer synth = new SpeechSynthesizer();
+            //SpeechSynthesizer synth = new SpeechSynthesizer();
 
-            // Configure the audio output. 
-            synth.SetOutputToDefaultAudioDevice();
-            var voice = synth.GetInstalledVoices();
+            //// Configure the audio output. 
+            //synth.SetOutputToDefaultAudioDevice();
+            //var voice = synth.GetInstalledVoices();
 
-            //Check to see if it is on a windows 8 or higher machine
-            Version win8version = new Version(6, 2, 9200, 0);
-            if (Environment.OSVersion.Platform == PlatformID.Win32NT &&
-                Environment.OSVersion.Version >= win8version)
-            {
-                //This breaks if it is a window 7 machine. 
-                synth.SelectVoice(voice[2].VoiceInfo.Name);
-            }
+            ////Check to see if it is on a windows 8 or higher machine
+            //Version win8version = new Version(6, 2, 9200, 0);
+            //if (Environment.OSVersion.Platform == PlatformID.Win32NT &&
+            //    Environment.OSVersion.Version >= win8version)
+            //{
+            //    //This breaks if it is a window 7 machine. 
+            //    synth.SelectVoice(voice[2].VoiceInfo.Name);
+            //}
 
 
 
@@ -105,7 +105,7 @@ namespace SURLY
                 db.insert("Movies",
                        new Object[] { 1, "Star Trek", 15, 20000, 300 });
 
-                synth.Speak("I'm sorry.");
+             
             }
 
             db.print("Game");

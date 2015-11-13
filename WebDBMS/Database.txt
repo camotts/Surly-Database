@@ -1,0 +1,18 @@
+µTeacher
+‰ID	Name	Password	
+ßint	string	string	
+Σ5	50	10000	
+ΦFalse	True	True	
+φ
+µClasses
+‰ID	TeacherID	Name	EnrolledStudents	Description	
+ßint	int	string	int	string	
+Σ5	5	30	10	1000	
+ΦFalse	False	False	False	False	
+φ
+µFiles
+‰ID	ClassID	Path	
+ßint	int	string	
+Σ5	5	300	
+ΦFalse	False	False	
+φ

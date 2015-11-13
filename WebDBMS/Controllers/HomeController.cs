@@ -11,9 +11,6 @@ namespace WebDBMS.Controllers
     public class HomeController : Base
     {
 
-
-
-
         [HttpGet]
         public ActionResult Command()
         {

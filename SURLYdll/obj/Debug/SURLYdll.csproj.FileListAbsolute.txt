@@ -9,3 +9,14 @@ C:\Users\Cam\Documents\Visual Studio 2013\Projects\DataBase DLL\CMPS 439\SURLYdl
 C:\Users\Cam\Documents\Visual Studio 2013\Projects\DataBase DLL\CMPS 439\SURLYdll\bin\Debug\Nito.AsyncEx.xml
 C:\Users\Cam\Documents\Visual Studio 2013\Projects\DataBase DLL\CMPS 439\SURLYdll\bin\Debug\Nito.AsyncEx.Concurrent.xml
 C:\Users\Cam\Documents\Visual Studio 2013\Projects\DataBase DLL\CMPS 439\SURLYdll\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+F:\School\CMPS 401\API\SURLYdll\bin\Debug\SURLYdll.dll
+F:\School\CMPS 401\API\SURLYdll\bin\Debug\SURLYdll.pdb
+F:\School\CMPS 401\API\SURLYdll\bin\Debug\Nito.AsyncEx.Concurrent.dll
+F:\School\CMPS 401\API\SURLYdll\bin\Debug\Nito.AsyncEx.dll
+F:\School\CMPS 401\API\SURLYdll\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+F:\School\CMPS 401\API\SURLYdll\bin\Debug\Nito.AsyncEx.xml
+F:\School\CMPS 401\API\SURLYdll\bin\Debug\Nito.AsyncEx.Concurrent.xml
+F:\School\CMPS 401\API\SURLYdll\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+F:\School\CMPS 401\API\SURLYdll\obj\Debug\SURLYdll.csprojResolveAssemblyReference.cache
+F:\School\CMPS 401\API\SURLYdll\obj\Debug\SURLYdll.dll
+F:\School\CMPS 401\API\SURLYdll\obj\Debug\SURLYdll.pdb

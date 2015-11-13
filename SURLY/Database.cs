@@ -252,6 +252,7 @@ namespace SURLY
             var tempColumns = new List<ColumnProperties>();
             var tempColumnIndex = 0;
             var table = Tables.FirstOrDefault(x => x.Item1.ToLower() == tableName);
+            if (table == null) return null;
 
             foreach (var columnz in table.Item2.Columns)
             {
@@ -262,7 +263,8 @@ namespace SURLY
                 }
             }
             Relation tempRelation = new Relation(tempColumns);
-            var selectedRelation = table.Item2.Rows.Where(x => x.Cellsssss[tempColumnIndex].ToString().ToLower() == value);
+            var selectedRelation =
+                table.Item2.Rows.Where(x => x.Cellsssss[tempColumnIndex].ToString().ToLower() == value);
             foreach (var row in selectedRelation)
             {
                 tempRelation.Rows.Add(row);
@@ -286,7 +288,7 @@ namespace SURLY
         {
             //For nice formatting
             Console.WriteLine("\n____________________________________________________________________");
-
+            if (rel == null) return;
             //Go through all the columns and format it for the console
             for (int y = 0; y < rel.Columns.Count(); y++)
                 Console.Write("{0, " + (2 * y + 7) + "} | ", rel.Columns[y].Name);

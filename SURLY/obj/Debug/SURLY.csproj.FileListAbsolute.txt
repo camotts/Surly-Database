@@ -1,1 +1,7 @@
 C:\Users\Cam\Documents\Visual Studio 2013\Projects\DataBase DLL\CMPS 439\SURLY\bin\Debug\SURLY.exe.config
+F:\School\CMPS 401\API\SURLY\bin\Debug\SURLY.exe.config
+F:\School\CMPS 401\API\SURLY\bin\Debug\SURLY.exe
+F:\School\CMPS 401\API\SURLY\bin\Debug\SURLY.pdb
+F:\School\CMPS 401\API\SURLY\obj\Debug\SURLY.csprojResolveAssemblyReference.cache
+F:\School\CMPS 401\API\SURLY\obj\Debug\SURLY.exe
+F:\School\CMPS 401\API\SURLY\obj\Debug\SURLY.pdb

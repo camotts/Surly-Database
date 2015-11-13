@@ -18,7 +18,7 @@ namespace SURLY
         public Database()
         {
             Tables = new List<Tuple<string, Relation>>();
-            LoadDatabase();
+            LoadDatabase(@"Database.txt");
         }
 
         //The Tuple holds the Table Name and the actual table (Relation)
@@ -374,9 +374,10 @@ namespace SURLY
             }
         }
 
-        private void LoadDatabase()
+        private void LoadDatabase(string fileName)
         {
-            using (var sr = new StreamReader(@"C:\Users\Cam\Documents\School\Test.txt"))
+            var uri = AppDomain.CurrentDomain.BaseDirectory;
+            using (var sr = new StreamReader(uri +fileName))
             {
                 string line;
                 string tableName = "";
@@ -437,9 +438,10 @@ namespace SURLY
             }
         }
 
-        private async Task dbSave()
+        private async Task DbSave(string filePath)
         {
-            using (var file = new StreamWriter(@"C:\Users\Cam\Documents\School\Test.txt"))
+            var uri = AppDomain.CurrentDomain.BaseDirectory;
+            using (var file = new StreamWriter( uri +filePath))
             {
                 foreach (var table in Tables)
                 {
@@ -536,7 +538,7 @@ namespace SURLY
                     }
                 }
             }
-            var task = dbSave();
+            var task = DbSave(@"Database.txt");
             task.WaitAndUnwrapException();
             return retList;
         }
@@ -746,5 +748,12 @@ namespace SURLY
         }
 
         #endregion
+        private string PathToAppDir(string localPath)
+        {
+            var currentDir = Environment.CurrentDirectory;
+            var directory = new DirectoryInfo(
+                Path.GetFullPath(Path.Combine(currentDir, @"..\..\" + localPath)));
+            return directory.ToString();
+        }
     }
 }
