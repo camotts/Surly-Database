@@ -276,7 +276,7 @@ namespace SURLY
             foreach (var columnz in table.Item2.Columns)
             {
                 tempColumns.Add(columnz);
-                if (columnz.Name.Equals(column))
+                if (columnz.Name.ToUpper().Equals(column.ToUpper()))
                 {
                     tempColumnIndex = table.Item2.Columns.IndexOf(columnz);
                 }
@@ -285,7 +285,7 @@ namespace SURLY
 
             //find the condition from the index and get the list of rows that will need to be selected
             var selectedRelation =
-                table.Item2.Rows.Where(x => x.Cellsssss[tempColumnIndex].ToString().ToLower() == value);
+                table.Item2.Rows.Where(x => x.Cellsssss[tempColumnIndex].ToString().ToLower().Equals(value.ToLower()));
             foreach (var row in selectedRelation)
             {
                 tempRelation.Rows.Add(row);

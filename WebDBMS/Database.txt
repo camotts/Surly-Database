@@ -9,7 +9,8 @@
 ßint	int	string	int	string	
 Σ5	5	30	10	1000	
 ΦFalse	False	False	False	False	
-φ
+φ1	φ0	φTest	φ0	φTest	
+φ2	φ0	φwhat	φ0	φwhta	
 µFiles
 ‰ID	ClassID	Path	
 ßint	int	string	
