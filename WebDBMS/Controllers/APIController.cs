@@ -11,42 +11,45 @@ namespace WebDBMS.Controllers
     {
         public string Login(string userName, string password)
         {
-            var ret = WebDataBase.db.parse("Select from Teacher Where username = '" + userName + "' AND password = " + password);
-            if (ret != null)
+            return JsonQuery("Select * from Teacher Where username = " + userName + " AND password = " + password);
+        }
+
+        public string Classes(int TeachID)
+        {
+            return JsonQuery("Select * from Classes WHERE TeacherID = " + TeachID);
+        }
+
+        private string JsonQuery(string query)
+        {
+            var db = WebDataBase.db.parse(query);
+            if (db != null)
             {
-                var whtat = ret.First(x => true).Item2.Rows;
-                return JsonConvert.SerializeObject(whtat);
+                var ret = ObjectFromDB(db);
+                if (ret.Count > 1)
+                {
+                    return JsonConvert.SerializeObject(ret);
+                }
+                else
+                {
+                    return JsonConvert.SerializeObject(ret[0]);
+                }
             }
             return null;
         }
 
-        public string Classes()
+        private List<Dictionary<String, String>> ObjectFromDB(List<Tuple<string, SURLY.Relation>> input)
         {
-            var TeachID = 0;
-            var ret = WebDataBase.db.parse("Select from Classes WHERE TeacherID = " + TeachID);
-            //var dict = new Dictionary<Int64, String>();
-            //dict.Add(1, "key");
-            //dict.Add(2, "second");
-            //var y = JsonConvert.SerializeObject(dict);
-            //var z = JsonConvert.DeserializeObject(y);
-            if (ret != null)
+            var ret = new List<Dictionary<String, String>>();
+            foreach (var row in input[0].Item2.Rows)
             {
-                var jRet = new List<Dictionary<String, String>>();
-                foreach (var row in ret[0].Item2.Rows)
+                var item = new Dictionary<String, String>();
+                for (int i = 0; i < row.Cellsssss.Length; i++)
                 {
-                    var item = new Dictionary<String, String>();
-                    for (int i = 0; i < row.Cellsssss.Length; i++)
-                    {
-                        item = new Dictionary<String, String>();
-                        var kjd = ret[0].Item2.Columns[i].ToString();
-                        item.Add(ret[0].Item2.Columns[i].ToString(), row.Cellsssss[i].ToString());
-                    }
-                    jRet.Add(item);
+                    item.Add(input[0].Item2.Columns[i].Name.ToString(), row.Cellsssss[i].ToString());
                 }
-                var test = JsonConvert.SerializeObject(jRet);
-                return test;
+                ret.Add(item);
             }
-            return null;
+            return ret;
         }
     }
 }
