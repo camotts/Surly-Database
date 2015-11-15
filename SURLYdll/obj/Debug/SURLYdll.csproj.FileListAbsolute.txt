@@ -31,3 +31,14 @@ C:\Users\Patrick\Documents\Surly-Database\SURLYdll\bin\Debug\Nito.AsyncEx.Enligh
 C:\Users\Patrick\Documents\Surly-Database\SURLYdll\obj\Debug\SURLYdll.csprojResolveAssemblyReference.cache
 C:\Users\Patrick\Documents\Surly-Database\SURLYdll\obj\Debug\SURLYdll.dll
 C:\Users\Patrick\Documents\Surly-Database\SURLYdll\obj\Debug\SURLYdll.pdb
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLYdll\bin\Debug\SURLYdll.dll
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLYdll\bin\Debug\SURLYdll.pdb
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLYdll\bin\Debug\Nito.AsyncEx.Concurrent.dll
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLYdll\bin\Debug\Nito.AsyncEx.dll
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLYdll\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLYdll\bin\Debug\Nito.AsyncEx.xml
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLYdll\bin\Debug\Nito.AsyncEx.Concurrent.xml
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLYdll\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLYdll\obj\Debug\SURLYdll.csprojResolveAssemblyReference.cache
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLYdll\obj\Debug\SURLYdll.dll
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLYdll\obj\Debug\SURLYdll.pdb

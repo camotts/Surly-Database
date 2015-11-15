@@ -3,7 +3,7 @@
 ßint	string	string	
 Σ5	50	10000	
 ΦFalse	True	True	
-φ
+φ1	φTest	φTest	
 µClasses
 ‰ID	TeacherID	Name	EnrolledStudents	Description	
 ßint	int	string	int	string	

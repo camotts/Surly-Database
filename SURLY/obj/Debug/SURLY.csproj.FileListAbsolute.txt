@@ -5,3 +5,15 @@ F:\School\CMPS 401\API\SURLY\bin\Debug\SURLY.pdb
 F:\School\CMPS 401\API\SURLY\obj\Debug\SURLY.csprojResolveAssemblyReference.cache
 F:\School\CMPS 401\API\SURLY\obj\Debug\SURLY.exe
 F:\School\CMPS 401\API\SURLY\obj\Debug\SURLY.pdb
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLY\bin\Debug\SURLY.exe.config
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLY\bin\Debug\SURLY.exe
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLY\bin\Debug\SURLY.pdb
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLY\bin\Debug\Nito.AsyncEx.Concurrent.dll
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLY\bin\Debug\Nito.AsyncEx.dll
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLY\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLY\bin\Debug\Nito.AsyncEx.xml
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLY\bin\Debug\Nito.AsyncEx.Concurrent.xml
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLY\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLY\obj\Debug\SURLY.csprojResolveAssemblyReference.cache
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLY\obj\Debug\SURLY.exe
+C:\Users\Cam\Documents\GitHub\Surly-Database\SURLY\obj\Debug\SURLY.pdb

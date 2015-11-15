@@ -9,30 +9,41 @@ namespace WebDBMS.Controllers
 {
     public class APIController : Base
     {
+        
         public string Login(string userName, string password)
         {
-            return JsonQuery("Select * from Teacher Where username = " + userName + " AND password = " + password);
+            var user = JsonQuery("Select * from Teacher Where name = " + userName);
+            if (user[0]["Name"].Equals(password))
+            {
+                return objToJson(user);
+            }
+            return null;
         }
 
         public string Classes(int TeachID)
         {
-            return JsonQuery("Select * from Classes WHERE TeacherID = " + TeachID);
+            return objToJson(JsonQuery("Select * from Classes WHERE TeacherID = " + TeachID));
         }
 
-        private string JsonQuery(string query)
+        private string objToJson(List<Dictionary<String, String>> obj)
+        {
+                if (obj.Count > 1)
+                {
+                    return JsonConvert.SerializeObject(obj);
+                }
+                else
+                {
+                    return JsonConvert.SerializeObject(obj[0]);
+                }
+            
+        }
+
+        private List<Dictionary<String, String>> JsonQuery(string query)
         {
             var db = WebDataBase.db.parse(query);
             if (db != null)
             {
-                var ret = ObjectFromDB(db);
-                if (ret.Count > 1)
-                {
-                    return JsonConvert.SerializeObject(ret);
-                }
-                else
-                {
-                    return JsonConvert.SerializeObject(ret[0]);
-                }
+                return ObjectFromDB(db);
             }
             return null;
         }
@@ -49,7 +60,11 @@ namespace WebDBMS.Controllers
                 }
                 ret.Add(item);
             }
-            return ret;
+            if (ret.Count > 0)
+            {
+                return ret;
+            }
+            return null;
         }
     }
 }
